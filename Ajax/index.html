@@ -11,8 +11,8 @@
     <form class="searchForm">
         <input type="text" class="search" placeholder="City or State">
         <ul class="suggestions">
-            <li>Filter for a City</li>
-            <li>or a State</li>
+            <li>Filter for a City or a State</li>
+            <li>and view its ranking</li>
         </ul>
     </form>
 
@@ -30,9 +30,14 @@
             return cities.filter(place => {
 
             const regex = new RegExp(wordToMatch, "gi");
-            return place.city.match(regex) || place.state.match(regex)
+            return place.city.match(regex) || place.state.match(regex) || place.rank.match(regex)
             });
             }
+
+            // function to add comas to my number displaying the poppulation
+            function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
             //function to display matches found
             function displayMatches(){
@@ -45,7 +50,8 @@
                     return `
                     <li>
                         <span class="name">${cityName}, ${stateName}</span>
-                        <span class="population">${place.population}</span>
+                        <span class="population">${numberWithCommas(place.population)}</span>
+                        <span class="rank">${place.rank}</span>
                     </li>
                     `
                 }).join('')
