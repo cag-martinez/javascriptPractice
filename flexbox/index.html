@@ -125,14 +125,15 @@
 
   <script>
 
-    const panels = document.querySelectorAll('.panel')
+    const panels = document.querySelectorAll('.panel');
 
-    function toggleOpen(){
-        console.log("hello");
+    function toggleOpen() {
+        
         this.classList.toggle('open');
+        console.log("hello");
     }
 
-    panels.forEach(panel => panel.addEventListener('onClick', toggleOpen));
+    panels.forEach(panel => panel.addEventListener('click', toggleOpen));
 
   </script>
 
