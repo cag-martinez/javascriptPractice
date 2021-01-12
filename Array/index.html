@@ -10,20 +10,34 @@
 
     <body>
         <script>
-            const peopleArray = [
+            const people = [
             {name: 'wes', year: 1988},
             {name: 'kait', year: 1986},
             {name: 'irv', year: 1970},
             {name: 'lux', year: 2015}
             ];
 
-            const ccomments = [
+            const comments = [
                 {text: 'love this', id: 523423 },
                 {text: 'super good', id: 823423},
                 {text: "you are the best", id: 2039842},
                 {text: 'ramen is my fave food ever', id: 123523},
                 {text: 'nice, nice, nice!!', id: 542328}
             ]
+
+
+                    
+            const isAdult =  people.some(function(person) {
+                const currentYear = (new Date()).getFullYear();
+                if( currentYear - person.year >= 19){
+                    return true;
+                }
+            })
+
+            console.log(isAdult)
+
+            
+
         </script>
 
     </body>
