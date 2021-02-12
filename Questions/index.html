@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <title>
+        questions
+    </title>
+</head>
+
+<body>
+    <script>
+        //array of queations
+        var questions = [
+            { q: "is my favorite color red?", a: "t" },
+            { q: "do i like fries?", a: "f" },
+            { q: "do i enjoy coding?", a: "t" }
+        ]
+        //keeping score
+        var score = 0;
+
+        //looping through my array
+        for (var i = 0; i < questions.length; i++) {
+            var answer = confirm(questions[i].q)
+
+            if ((answer === true && questions[i].a === "t") ||
+                (answer === false && questions[i].a === "f")) {
+                score++;
+                console.log(score)
+                alert("correct")
+            }
+            else {
+                alert("incorrect")
+            }
+        }
+        //final score
+        alert("your final score is " + score)
+    </script>
+</body>
+
+</html>
