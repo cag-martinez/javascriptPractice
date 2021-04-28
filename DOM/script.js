@@ -9,3 +9,5 @@ main.childNodes[1].style.textDecoration="underline";
 main.lastElementChild.style.fontSize="50px"
 main.firstElementChild.style.color="orange";
 main.lastElementChild.parentElement.style.fontSize="40px"
+
+article.children[1].lastElementChild.style.border="red"

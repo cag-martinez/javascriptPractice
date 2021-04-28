@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title> DRY ARRAY </title>
+</head>
+
+<body>
+    </div>
+    <h1>Look in the console</h1>
+    </div>
+
+    <script>
+        // Various Arrays
+        var brands = ["Acer", "Apple", "Sony", "Samsung"];
+        var heroes = ["Black Panther", "Cyborg", "Black Canary", "Donna Troy", "Huntress", "Blue Beetle", "Captain Atom"];
+        var booksOnMyShelf = ["Calculus Early Transcendentals", "Ravens", "The Self Illusion", "Harry Potter"];
+        var thingsInFrontOfMe = ["Laptop", "Beanbag", "Cats", "Slippers"];
+        var howIFeel = ["Sleep Deprived", "Wired on Coffee", "Excited"];
+    
+        // Looping through brands array
+        for (var i = 0; i < brands.length; i++){
+            console.log(brands[i])
+        }
+        console.log("++++++++++++++++++")
+        // Looping through heroes array
+        for (var h = 0; h < heroes.length; h++){
+            console.log(heroes[h])
+        }
+        console.log("++++++++++++++++++")
+        // Looping through booksOnMyShelve array
+        for (var b  = 0; b < booksOnMyShelf.length; b++){
+            console.log(booksOnMyShelf[b])
+        }
+    
+        // Dry
+
+        function dryLoop(array){
+            for (var d = 0; d < array.length; d++){
+                console.log(array[d])
+            }
+        }
+
+        dryLoop(thingsInFrontOfMe)
+        dryLoop(howIFeel)
+
+    </script>
+</body>
+
+</html>
