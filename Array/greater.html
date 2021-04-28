@@ -12,18 +12,25 @@
       // Set up an array of numbers.
       var numbers = [1, 8, 2, 3, 1, 1, 6, 6, 6];
 
+      numbers.push(7, 0, 35)
+      numbers.shift(6)
+
       // Loop through the array we just set up.
      for (var i = 0; i < numbers.length; i++){
          if (numbers[i] == 8){
              console.log("there is a number eight")
          } else if (numbers[i] == 6){
              console.log("there is a number six here")
+         } else if(numbers[i]> 5){
+             console.log("big number")
          }
          else{
              console.log("wrong number")
          }
      }
      console.log(numbers)
+
+
 
     </script>
     
