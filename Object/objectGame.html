@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <metta charset="UTF-8">
+        <title>Game</title>
+</head>
+
+<body>
+    <script>
+
+        var choice
+
+        var car = {
+            make: "Honda",
+            model: "Fit",
+            color: "Blue Raspberry",
+            mileage: 3000,
+            isWorking: true,
+
+            carMake: function () {
+                // prompt("see make, model or color")
+                alert("The cars make is " + this.make + "!!")
+                // this.make = this.make
+            },
+            carModel: function () {
+
+                alert("the model of the car is " + this.model + "!!")
+            },
+            carColor: function () {
+
+                alert("The color of the car is " + this.color + "!!")
+            }
+        }
+
+        function results() {
+            console.log(car.make)
+            console.log(car.color)
+            console.log(car.model)
+        }
+
+        while (choice !== null) {
+            choice = prompt("see 'make', 'model' or 'color'")
+
+            if (choice === 'make') {
+                car.carMake()
+                results()
+            }
+            else if (choice === 'model') {
+                car.carModel()
+                results()
+            }
+            else if (choice === 'color') {
+                car.carColor()
+                results()
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
