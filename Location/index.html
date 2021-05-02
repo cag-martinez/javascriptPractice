@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geolocation</title>
+</head>
+<body>
+
+    <script>
+        // Check if the browser supports this feature
+        function checkBrowser(){
+            if(navigator.geolocation)(
+                navigator.geolocation.getCurrentPosition(showLocation)
+            )
+            else{
+                alert("Geolocation is not supported")
+            }
+        }
+    
+        function showLocation(position) {
+            // Getting the coordinates
+            var lat = position.coords.latitude;
+            var lon = position.coords.longitude; 
+            console.log(lat)
+        }
+        
+        // Redirect
+
+        function redirect(lat, lon) {
+            if( lat >= 30 && lon <= -100){
+                window.location.href="west.html"
+            }
+            else{
+                window.location.href="east.html"
+            }
+        }
+
+        // Check the OS
+
+        if(navigator.userAgent.indexOf('windows') !)
+    </script>
+    
+</body>
+</html>
