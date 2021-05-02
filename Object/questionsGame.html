@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions Game</title>
+</head>
+<body>
+    <script>
+
+        var choice
+
+        var questions = [
+            {q: "Is the sky blue?", a:"t"},
+            {q: "Is it cold in the North Pole?", a:"t"},
+            {q: "Bananas are vegetables", a:"f"}
+        ]
+
+        score = 0
+
+        for (var i = 0; i < questions.length; i++){
+
+            //console.log(questions)
+            var answer = confirm(questions[i].q)
+
+            if(questions.q === true){
+                score++
+            }else if(question.q === false)
+                score--
+        }
+
+    </script>
+</body>
+</html>
