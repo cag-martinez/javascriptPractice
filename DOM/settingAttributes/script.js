@@ -21,7 +21,7 @@ site2.children[1].setAttribute('href', 'https://www.amazon.com/');
 site3.children[0].textContent='Site number three';
 site3.children[1].children[0].setAttribute('src', 'images/image_3.jpg');
 site3.children[1].children[0].setAttribute('alt', 'Group work');
-site3.children[1].children[0].setAttribute('href', 'https://www.youtube.com/')
+site3.children[1].setAttribute('href', 'https://www.youtube.com/')
 site3.children[1].children[0].setAttribute('style', 'display:block; margin-left: auto; margin-righ: auto')
 
 for(var i = 0; i<titles.length; i++){
