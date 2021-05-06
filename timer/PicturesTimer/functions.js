@@ -7,7 +7,7 @@ function setTime() {
   var timerInterval = setInterval(function () {
     timeRemaining--;
     main.textContent =
-      timeRemaining + "seconds remaining before the next picture!!";
+      timeRemaining + " seconds remaining before the next picture!!";
     if (timeRemaining === 0) {
       clearInterval(timerInterval);
       sendMessage();
@@ -16,7 +16,7 @@ function setTime() {
 }
 
 function sendMessage() {
-  main = "";
+  main.textContent = "";
 
   var imgElement = document.createElement("img");
   imgElement.setAttribute("src", "images/car1.jpg");
