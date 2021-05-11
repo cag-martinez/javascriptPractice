@@ -22,7 +22,12 @@ function sendMessage() {
   imgElement.setAttribute("src", "images/car1.jpg");
   //fix the style
   //imgElement.setAttribute("style", 'align-items: center')
+
+  // Add a loop to look thorugh all of the images every 5 seconds
+
   pictures.appendChild(imgElement);
 }
+
+
 
 setTime();
