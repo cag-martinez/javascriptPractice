@@ -57,13 +57,53 @@
 
 
 
-function flavors(){
-    var iceCream = "vanilla";
-    var result = " ";
-    if (iceCream != "vanilla"){
-        result = "true"
-    } else{
-        result = "false"}
-    console.log(result);
+// function flavors(){
+//     var iceCream = "vanilla";
+//     var result = " ";
+//     if (iceCream != "vanilla"){
+//         result = "true"
+//     } else{
+//         result = "false"}
+//     console.log(result);
+// }
+// flavors();
+
+// function minus(e) {
+//     return e - 8;
+// }
+// console.log(minus(12))
+
+// function pluss(numbers) {
+//     return numbers + 11;
+// }
+// console.log(pluss(10))
+////////////////////////
+// var change = 0;
+// function refund(cash) {
+//     return (12/2) + cash
+// }
+// change = refund(4)
+// //===============================
+// function nextInLine(arr, item){
+// arr.push(item)
+//     return arr.shift()
+// }
+
+// var testArr = [1,2,3,4,5];
+
+// console.log("Before: " + JSON.stringify(testArr))
+// console.log(nextInLine(testArr,6))
+// console.log("After: " + JSON.stringify(testArr))
+
+function two(arr, item) {
+    arr.push(item)
+    return arr.unshift()
+     
+    
 }
-flavors();
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + (testArr))
+console.log(two(testArr,7))
+console.log("after: "+ (testArr))
+
