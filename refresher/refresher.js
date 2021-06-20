@@ -234,47 +234,70 @@
 // cc(22); cc(6); cc(18); cc("K"); cc("A")
 // console.log(cc(4))
 
-var myDog = {
-  name: "Max",
-  age: "2 years old",
-  breed: "english bulldog",
-};
+// var myDog = {
+//   name: "Max",
+//   age: "2 years old",
+//   breed: "english bulldog",
+// };
 
-function checkObject(prop) {
-  if (myDog.hasOwnProperty(prop)) {
-    return myDog[prop];
-  } else {
-    return "Prop not found";
-  }
+// function checkObject(prop) {
+//   if (myDog.hasOwnProperty(prop)) {
+//     return myDog[prop];
+//   } else {
+//     return "Prop not found";
+//   }
+// }
+// checkObject();
+// console.log(checkObject("name"));
+// console.log(myDog);
+
+// var myObject = {
+//   names: "max and athena",
+//   height: "seven",
+//   car: "honda",
+// };
+
+// function check(hasProp) {
+//   if (myObject.hasOwnProperty(hasProp)) {
+//     return myObject[hasProp];
+//   } else {
+//     return "no prop";
+//   }
+// }
+// console.log(check("car"));
+// console.log(check("breed"));
+// console.log(myObject);
+
+// var nestedObject = {
+//   usStates: {
+//     nc: "charlotte",
+//     tn: {
+//       nashville: "the gulch",
+//     },
+//   },
+// };
+// var myTown = nestedObject.usStates.tn.nashville;
+// console.log(myTown);
+
+var array = [];
+var i = 0;
+
+while ( i < 4){
+    array.push(i)
+    i++
 }
-checkObject();
-console.log(checkObject("name"));
-console.log(myDog);
+console.log(array)
 
-var myObject = {
-  names: "max and athena",
-  height: "seven",
-  car: "honda",
-};
 
-function check(hasProp) {
-  if (myObject.hasOwnProperty(hasProp)) {
-    return myObject[hasProp];
-  } else {
-    return "no prop";
-  }
-}
-console.log(check("car"));
-console.log(check("breed"));
-console.log(myObject);
+var array2 = [];
+ for (var i = 0; i <= 10; i++){
+     array2.push(i)
+ }
+ console.log(array2)
 
-var nestedObject = {
-  usStates: {
-    nc: "charlotte",
-    tn: {
-      nashville: "the gulch",
-    },
-  },
-};
-var myTown = nestedObject.usStates.tn.nashville;
-console.log(myTown);
+ var array3 = [1,2,3]
+
+ for (x = 0; x <= 5; x++){
+     array3.push(x)
+ }
+ console.log(array3)
