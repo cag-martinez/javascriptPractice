@@ -301,3 +301,9 @@ var array2 = [];
      array3.push(x)
  }
  console.log(array3)
+
+ var array4 = [];
+ for (var a = 1; a< 100; a-= 2){
+     array4.push(a)
+ }
+ console.log(array4)
