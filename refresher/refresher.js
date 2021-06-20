@@ -183,56 +183,98 @@
 // }
 // console.log(golfScore(5, 4));
 
+// function checkSwitch(value){
+//     var answer = ""
+//     switch(value){
+//         case 1:
+//             answer = "alpha";
+//             break;
+//         case 2:
+//             answer = "beta";
+//             break;
+//         case 3:
+//             answer = "tango";
+//         default:
+//             answer = "Nothing here"
+//     }
+//     return answer
+// }
+// console.log(checkSwitch(6))
+// //=======================================
+// var count = 0
 
-function checkSwitch(value){
-    var answer = ""
-    switch(value){
-        case 1:
-            answer = "alpha";
-            break;
-        case 2:
-            answer = "beta";
-            break;
-        case 3:
-            answer = "tango";
-        default:
-            answer = "Nothing here"
-    }
-    return answer
+// function cc(card){
+//     switch(card){
+//         case 1:
+//         case 2:
+//         case 3:
+//         case 4:
+//         case 5:
+//         case 6:
+//         case 7:
+//         case 8:
+//         case 9:
+//             count++
+//             break;
+//         case 10:
+//         case "K":
+//         case "Q":
+//         case "J":
+//         case "A":
+//             count--
+//             break;
+//     }
+
+//     var bet = "hold";
+//     if (count > 0){
+//         bet = "bet!"
+//     }
+//     return count + ' ' + bet;
+// }
+// cc(22); cc(6); cc(18); cc("K"); cc("A")
+// console.log(cc(4))
+
+var myDog = {
+  name: "Max",
+  age: "2 years old",
+  breed: "english bulldog",
+};
+
+function checkObject(prop) {
+  if (myDog.hasOwnProperty(prop)) {
+    return myDog[prop];
+  } else {
+    return "Prop not found";
+  }
 }
-console.log(checkSwitch(6))
-//=======================================
-var count = 0
+checkObject();
+console.log(checkObject("name"));
+console.log(myDog);
 
-function cc(card){
-    switch(card){
-        case 1:
-        case 2:
-        case 3:
-        case 4:
-        case 5:
-        case 6:    
-        case 7:
-        case 8:
-        case 9:
-            count++    
-            break;
-        case 10:
-        case "K":
-        case "Q":
-        case "J":
-        case "A":
-            count--
-            break;       
-    }
-    
+var myObject = {
+  names: "max and athena",
+  height: "seven",
+  car: "honda",
+};
 
-    var bet = "hold";
-    if (count > 0){
-        bet = "bet!"
-    }
-    return count + '' + bet;
+function check(hasProp) {
+  if (myObject.hasOwnProperty(hasProp)) {
+    return myObject[hasProp];
+  } else {
+    return "no prop";
+  }
 }
-cc(22); cc(6); cc(18); cc("K"); cc("A")
-console.log(cc(4))
+console.log(check("car"));
+console.log(check("breed"));
+console.log(myObject);
 
+var nestedObject = {
+  usStates: {
+    nc: "charlotte",
+    tn: {
+      nashville: "the gulch",
+    },
+  },
+};
+var myTown = nestedObject.usStates.tn.nashville;
+console.log(myTown);
