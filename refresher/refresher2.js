@@ -72,3 +72,28 @@ console.log(total)
 
 // var data =  getContact("Hary","lastName")
 // console.log(data)
+
+//var number = Math.floor(Math.random()*20)
+function random(){
+    return Math.floor(Math.random()*5)  
+}
+console.log(random())
+
+//get a random number between 5 and 15
+
+function randomNumber(min, max){
+    return Math.floor(Math.random() * (max - min +1) + min)
+}
+var rando = (randomNumber(1,5))
+console.log(rando)
+console.log(randomNumber(5,15))
+
+//Ternary check if a number is positive, negative or zero
+
+function checkNum(num){
+    return num > 0 ? "Possitve" : num < 0 ? "Neggative" : "Zero" 
+}
+// var digit = checkNum(2)
+var digit = checkNum(0)
+//var digit = checkNum(-2)
+console.log(digit)
