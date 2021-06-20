@@ -97,3 +97,34 @@ function checkNum(num){
 var digit = checkNum(0)
 //var digit = checkNum(-2)
 console.log(digit)
+
+var concatFunc = function(arg1, arg2) {
+    return arg1.concat(arg2)
+}
+
+console.log(concatFunc([1,2],[3,4]))
+
+var conc = (one, two) => one.concat(two);
+console.log(conc([9,8,7],[6,5,4]))
+
+// filter the positive intergers and return the sqare of each number
+
+const numberList =[4, 5.6, -9.4, 3.14, 42, 6, 8.9, -2]
+
+const squaredNums = (num) => {
+    const intergers = num.filter(arr => Number.isInteger(arr) && arr > 0).map(x => x*x)
+    return intergers
+}
+const intergers = squaredNums(numberList)
+console.log(intergers)
+
+const materials = [
+    'Hydrogen',
+    'Helium',
+    'Lithium',
+    'Beryllium'
+  ];
+  
+  console.log(materials.map(material => material.length));
+
+
