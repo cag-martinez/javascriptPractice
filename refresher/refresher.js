@@ -1,4 +1,4 @@
-//Madlibs
+// Madlibs
 // function libs(noun, adj, verb, adverb) {
 //     var results = " ";
 //     results += "the " + adj + noun + verb + adverb + " to the store";
@@ -30,7 +30,7 @@
 // }
 // add(5, 6);
 
-//create 2 functions and two global variables: one inside the first function and the other outside the functions
+// create 2 functions and two global variables: one inside the first function and the other outside the functions
 // check if the variables are in scope using an if statement
 
 // var firstNum = 10;
@@ -73,7 +73,7 @@
 //     return numbers + 11;
 // }
 // console.log(pluss(10))
-////////////////////////
+// //////////////////////
 // var change = 0;
 // function refund(cash) {
 //     return (12/2) + cash
@@ -279,31 +279,31 @@
 // var myTown = nestedObject.usStates.tn.nashville;
 // console.log(myTown);
 
-var array = [];
-var i = 0;
+// var array = [];
+// var i = 0;
 
-while ( i < 4){
-    array.push(i)
-    i++
-}
-console.log(array)
+// while ( i < 4){
+//     array.push(i)
+//     i++
+// }
+// console.log(array)
 
 
-var array2 = [];
- for (var i = 0; i <= 10; i++){
-     array2.push(i)
- }
- console.log(array2)
+// var array2 = [];
+//  for (var i = 0; i <= 10; i++){
+//      array2.push(i)
+//  }
+//  console.log(array2)
 
- var array3 = [1,2,3]
+//  var array3 = [1,2,3]
 
- for (x = 0; x <= 5; x++){
-     array3.push(x)
- }
- console.log(array3)
+//  for (x = 0; x <= 5; x++){
+//      array3.push(x)
+//  }
+//  console.log(array3)
 
- var array4 = [];
- for (var a = 1; a< 100; a-= 2){
-     array4.push(a)
- }
- console.log(array4)
+//  var array4 = [];
+//  for (var a = 1; a< 100; a-= 2){
+//      array4.push(a)
+//  }
+//  console.log(array4)
